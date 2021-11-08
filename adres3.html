@@ -1,10 +1,40 @@
 <html>
-    <Head>
+<Head>
         <title>Wiedźmin</title>
-    </Head>
+<script type="text/javascript">
+
+function odliczanie()
+{
+    var dzisiaj = new Date();
+    var dzien = dzisiaj.getDate();
+    var miesiac = dzisiaj.getMonth() +1;
+    var godzina = dzisiaj.getHours(); 
+    var minuta = dzisiaj.getMinutes();
+    if(minuta<10) minuta = "0"+ minuta;
+    var sekunda = dzisiaj.getSeconds();
+    if(sekunda<10) sekunda = "0"+ sekunda;
+
+
+    document.getElementById("zegar").innerHTML = 
+    godzina+":"+minuta+":"+sekunda;
+
+    setTimeout("odliczanie()",1000);
+}
+</script>
+</Head>
+
 <style>
 body {background-color: rgb(182, 182, 201)}
-
+.container 
+{
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin: auto;
+    background-color: green;
+    width: 60px;
+    float: right;
+    
+}
 h1, h2 {
 color: rgb(31, 31, 180);
 }
@@ -18,7 +48,7 @@ width: 600x;
 height: 250px;}
 
 </style>
-
+<body onload="odliczanie();">
 <h1>Wiedźmin</h1>
 <p>
     <b>Wiedźmin</b>(ang. The Witcher) – amerykańsko-polski telewizyjny serial fantasy, stworzony przez Lauren S. Hissrich na podstawie książek Andrzeja Sapkowskiego o wiedźminie Geralcie.
@@ -38,6 +68,7 @@ Urodził się w Jersey[1] jako jeden z pięciu synów Marianne (z domu Dalgliesh
 
 Po ukończeniu St. Michael’s Preparatory School w Saint Saviour w Jersey, podjął naukę w szkole okrętowej Stowe School[4] w Buckingham, gdzie występował w szkolnym przedstawieniu Sen nocy letniej Williama Shakespeare’a, musicalu Grease[5] i 40 minut. W szkole Stowe uczył się na profilu historii, języka angielskiego i dramatu, jednak zrezygnował z napisania egzaminów końcowych z tych przedmiotów[6].
 </p>
-
-
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="zegar" class="container"></div>
+</body>
 </html>
