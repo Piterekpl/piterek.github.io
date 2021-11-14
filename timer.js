@@ -47,16 +47,14 @@ function schowaj()
 			}
 	
 function zmiens()
-			{
-				numer++; if(numer>5) numer=1;
-	
-				var plik ="<img src=\"slajdy/w"  + numer + ".jpeg\"  />";
-	
-				document.getElementById("slider").innerHTML = plik
-				$("#slider").fadeIn(500);
-				setTimeout("zmiens()",5000);
-				setTimeout("schowaj()",4500);
-			}
+{
+numer++; if(numer>5) numer=1;
+var plik ="<img src=\"slajdy/w"  + numer + ".jpeg\"  />";
+document.getElementById("slider").innerHTML = plik
+$("#slider").fadeIn(500);
+setTimeout("zmiens()",5000);
+setTimeout("schowaj()",4500);
+}
 
 
 
