@@ -33,20 +33,20 @@ function ustawslajd(nrslajdu)
 				
 			}
 			
-			function schowaj()
+function schowaj()
 			{
 				$("#slider").fadeOut(500);
 			}
 		
-			var numer = Math.floor(Math.random()*5)+1;
-			function schowaj()
+			
+function schowaj()
 			{
 				$("#slider").fadeOut(500);
 	
 	
 			}
 	
-			function zmiens()
+function zmiens()
 			{
 				numer++; if(numer>5) numer=1;
 	
