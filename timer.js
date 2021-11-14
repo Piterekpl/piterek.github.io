@@ -1,3 +1,8 @@
+var numer = Math.floor(Math.random()*5)+1;
+			
+var timer1 = 0;
+var timer2 = 0;
+
 function odliczanie()
 {
 	var dzisiaj = new Date();
@@ -14,10 +19,7 @@ function odliczanie()
 			
 	setTimeout("odliczanie()",1000);
 }
-var numer = Math.floor(Math.random()*5)+1;
-			
-var timer1 = 0;
-var timer2 = 0;
+
 			
 			
 function ustawslajd(nrslajdu)
