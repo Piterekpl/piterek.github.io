@@ -27,7 +27,7 @@ function ustawslajd(nrslajdu)
 				numer = nrslajdu - 1;
 				
 				schowaj();
-				setTimeout("zmienslajd()", 500);
+				setTimeout("zmiens()", 500);
 				
 			}
 			
